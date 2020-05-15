@@ -1,0 +1,52 @@
+<style>
+h1 {
+  text-align:center;
+  font-size: 48px;
+  font-family: Lobster;
+}
+body {
+  text-align: center;
+  font-family: Garamond;
+  font-size: 20px;
+  background:  url(https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_960_720.jpg);
+}
+.background {
+  background-color: #000000;
+  opacity: 80%;
+  color: white;
+  padding: 10px 60px 0px 60px;
+  margin: 50px 350px 50px 350px;
+  border-radius: 20px;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<div class="background">
+  <h1 id="title">Book Club Interest Survey</h1>
+<p id="description">If you're interested in signing up for the book club, please fill out the survey below so we can gauge your interests and reading habits. Thank you!
+</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name<br><br><input id="name" type="text" placeholder="John Smith" required></label><br><br>
+<label for="email" id="email-label">Email</label><br><br><input id="email" type="email" placeholder="123john@gmail.com" required><br><br>
+  <label for="number" id="number-label">How many books have you read in the past year?</label><br><br><input id="number" type="number" placeholder="10" min="1" max="100"><br><br>
+  <label for="genres" id="genres-label">What genres do you like to read?</label>
+  <p><label for="horror"><input id="horror" type="checkbox" name="genres" value="horror"> Horror</label></p>
+    <p><label for="fantasy"><input id="fantasy" type="checkbox" name="genres" value="fantasy"> Fantasy</label></p>
+  <p><label for="science fiction"><input id="science fiction" type="checkbox" name="genres" value="science fiction"> Science Fiction</label></p><br><br>
+  <label for="timing" id="schedule">How often can you meet?</label>
+  <p><input type="radio" id="weekly" name="schedule" value="weekly"> Weekly</p>
+  <p><input type="radio" id="monthly" name="schedule" value="monthly"> Monthly</p>
+  <p><input type="radio" id="quarterly" name="schedule" value="quarterly"> Quarterly</p>
+  <p><label for="dropdown" id="dropdown">How did you hear about the book club?</label></p>
+  <p>
+    <select id="dropdown">
+      <option id="friend">Friend</option>
+      <option id="social media">Social Media</option>
+      <option id="campus flyer">Campus Flyer</option>
+      <option id="other">Other</option>
+    </select>
+   </p>
+Any additional thoughts/comments?<br><br>
+<textarea></textarea><br><br>
+<button id="submit">Submit</button><br><br>
+</form>
+</div>
